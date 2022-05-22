@@ -1,3 +1,25 @@
+@keyframes hide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes textInUp {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -72,6 +94,7 @@
   flex: none;
   width: 50rem;
   max-width: 50%;
+  animation: hide 0.5s, textInUp 0.5s ease 0.5s;
 
   @media (min-width: $stop-scaling) {
     width: 500px;
@@ -93,6 +116,8 @@
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.27;
+
+  animation: textInUp 0.5s ease;
 
   @media (min-width: $stop-scaling) {
     width: 509px;
