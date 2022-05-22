@@ -1,4 +1,4 @@
-@keyframes messageInUp {
+@keyframes textInUp {
   from {
     opacity: 0;
     transform: translateY(200px);
@@ -106,7 +106,7 @@
   font-size: 2.4rem;
   line-height: 1.27;
 
-  animation: messageInUp 0.5s ease;
+  animation: textInUp 0.5s ease;
 
   @media (min-width: $stop-scaling) {
     width: 509px;
