@@ -1,3 +1,13 @@
+@keyframes hide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes textInLeft {
   from {
     opacity: 0;
@@ -62,7 +72,7 @@
     .slider__item-text {
       margin-top: 7.8rem;
 
-      animation: textInLeft 0.3s ease 0.2s;
+      animation: hide 0.3s, textInLeft 0.5s ease 0.3s;
 
       @media (min-width: $stop-scaling) {
         margin-top: 78px;
